@@ -4,7 +4,18 @@ body {
     font-style: normal;
 }
 
-.alert-container {}
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #fcd456;
+    border-color: #fcd456;
+}
 
 .callout-container {
     height:100vh;
@@ -22,13 +33,13 @@ body {
     position: relative;
 }
 
-.opaque-overlay {
+.opague-overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .quotes-container {}
@@ -36,6 +47,52 @@ body {
 .features-container {}
 
 .favorites-container {}
+
+/* block dividers */
+
+.block-divider{
+    width: 75px;
+    height: 5px;
+    border: 0;
+}
+
+.block-divider--orange {
+    background-color: orangered;
+}
+
+.block-divider--short{
+
+}
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
 
 /* jumbotron */
 
@@ -49,8 +106,36 @@ body {
     margin-bottom: 30px;
 }
 
+.jumbotron .lead {
+    margin: 25px 0;
+    color: #a7a7a7;
+}
+
 .jumbotron small {
     font-size: 60%;
     font-style: italic;
     color: #d0d0d0;
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    color:white;
+    background-color: #ac3002;
+    border-color: #ac3002;
 }
